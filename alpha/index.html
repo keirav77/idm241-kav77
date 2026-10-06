@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>    
+    </head>
+    <body>
+        <h1> Septa Real-Time Map Micro-interaction: Assignment Alpha</h1>
+        <p> <a href="https://www.septa.org/realtime-map?routes=PAO&focused=PAO&direction=0">Link to Real-Time Map</a> </p>
+<h1> How to Access Real-Time Map</h1>
+<p> Either using the link on this sheet or you can also access the real time map by going on: <a href="https://www.septa.org">https://www.septa.org</a>
+Then clicking on the real time map button, click the certain line or mode of transportation you want then see where they are.</p>
+
+<h2>1. Describe how user can locate one object on that web</h2>
+<ul>
+    <li>User clicks on real time map after opening Septa's website</li>
+    <li>The map is blank at first have to pick a certain route or line. </li>
+    <li>Once the user selects a route the map will update and show markers of where they are moving. </li>
+<li> User moves cursor over to a vehical marker and clicks on it to show additional information about next stops, where it's going an if theres any delays</li>
+</ul>
+<h2>2. Triggers</h2>
+<ul>
+    <li> User looks at the vehicle marker</li>
+    <li> Moves cursor onto the marker</li>
+    <li> User Clicks on the marker</li>
+    <li> Marker responds with a message popup that shows train number, information about next stop and inbound or outbound, and message about if it's delayed or on time.</li>
+<li> The interface responds with zooming into that specific vehicle as well.</li>
+</ul>
+<h2>3. Rules</h2>
+<ul>
+    <li> 1. Selecting a vehicle marker will display information.</li>
+    <li> 2. The map identifies the selected vehicle and displays its current location, next stops, and any delays.</li>
+<li> 2. Only the selected marker will show the information display.</li>
+<li> The map will update the other vehicles in real time but the information about them are only listed if you click on it. Selecting different ones will also show it.</li>
+</ul>
+<h2>4. Feedback</h2>
+<p> The feedback is mostly visual as a message pops up when they click on it. When they click outside of it the message goes away.</p>
+<h2>5. Loops and Modes</h2>
+<ul>
+    <li> Real-time changes: Location changes happen as septa vehicles move, therefore shows a changing state.
+    </li>
+    <li> Multiple Objects: Contains multiple different markers that can be selected.</li>
+    <li> Filtering: Users can filter out a certain route or service that will show only the relevant markers.</li>
+    <li> De-select: By selecting another option when you are still clicking on one it will switch description information.</li>
+    <li>Zooming: The interface responds with zooming into that specific vehicle as well.</li>
+
+</ul>
+
+<h1> Images </h1>
+<p>Image 1 shows the map before it displays any vehicles. </p>
+<img src="images/image 1.png" alt="Image 1" width="600">
+<p>Image 2 shows the map after selecting a route and the vehicles are displayed. </p>
+<img src="images/image 2.png" alt="Image 2" width="600">
+<p>Image 3 shows the map after hovering over a vehicle marker </p>
+<img src="images/image 3.png" alt="Image 3" width="600">
+<p>Image 4 shows the map after clicking on a vehicle marker and the information is displayed. </p>
+<img src="images/image 4.png" alt="Image 4" width="600">
+<p> Image 6 shows the map after selecting a different vehicle marker. </p>
+<img src="images/image 6.png" alt="Image 6" width="600">
+
+</body>    
+</html>

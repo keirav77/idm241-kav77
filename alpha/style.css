@@ -17,8 +17,10 @@ body {
 }
 
 a{
-    color: #1f4fa3;
+    color: #e8792a;
     text-decoration: none;
+    text-decoration: underline;
+    font-weight: 400;
 }
 h1 {
     font-size: 32px;

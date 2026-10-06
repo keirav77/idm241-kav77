@@ -1,0 +1,51 @@
+:root {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto'
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+a{
+    color: #1f4fa3;
+    text-decoration: none;
+}
+h1 {
+    font-size: 32px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing:-0.5px;
+
+}
+ul {
+    color: #ffffff;
+    font-weight: 200;
+    margin: auto;
+      padding: 20px 20px;
+      line-height: 1.6;
+    margin: 0, auto;
+
+}
+h2 {
+    color: #00A3E0;
+    font-weight: 500;
+}
+
+p {
+    color: #ffffff;
+    font-weight: 200;
+    margin: auto;
+      padding: 20px 20px;
+      line-height: 1.6;
+    margin: 0, auto;
+}

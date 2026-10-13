@@ -36,42 +36,128 @@ Then clicking on the real time map button, click the certain line or mode of tra
     <li> Click on- Marker responds with a message popup that shows train number, information about next stop and inbound or outbound, and message about if it's delayed or on time.</li>
 <li> Click on- The interface responds with zooming into that specific vehicle as well.</li>
 <li> Click off- The pop up message disappears. Does not zoom back out.</li>
+<h3>Vehicle Marker — Default / Not Selected</h3>
+<ul>
+  <li> Hover ON
+    <ul>
+      <li> Cursor changes to Pointer</li>
+      <li> Vehicle marker remains visible</li>
+    </ul>
+  </li>
+  <li> Hover OFF
+    <ul>
+      <li> Cursor changes back to the map cursor</li>
+    </ul>
+  </li>
+  <li> Click ON
+    <ul>
+      <li> Vehicle becomes selected</li>
+      <li> Information popup appears</li>
+      <li> Popup displays vehicle-specific information</li>
+      <li> Map zooms in toward the selected vehicle</li>
+    </ul>
+  </li>
+  <h3>Vehicle Marker — Selected</h3>
+  <li> Hover ON
+    <ul>
+      <li> Cursor changes to Pointer</li>
+      <li> Current vehicle information remains displayed</li>
+    </ul>
+  </li>
+  <li> Hover OFF
+    <ul>
+      <li> Cursor changes back to the map cursor</li>
+      <li> Current vehicle information remains displayed</li>
+    </ul>
+  </li>
+  <li> Click OFF
+    <ul>
+      <li> Information popup disappears</li>
+      <li> Map remains at its current zoom level</li>
+    </ul>
+  </li>
+  <li> Click Different Vehicle Marker
+    <ul>
+      <li> Previously selected vehicle information disappears</li>
+      <li> Newly selected vehicle information appears</li>
+      <li> Map moves/zooms to the newly selected vehicle</li>
+    </ul>
+  </li>
 
-
-    <li> 1. Selecting a vehicle marker will display information.</li>
-    <li> 2. The map identifies the selected vehicle and displays its current location, next stops, and any delays.</li>
-<li> 3. Only the selected marker will show the information display.</li>
-<li> Clicking on another marker will zoom out and zoom into the new marker. It also switches information on the pop up to the new information</li>
-</ul>
-<p>The map will update the other vehicles in real time but the information about them are only listed if you click on it. Selecting different ones will also show it.</p>
 
 <h2>4. Feedback</h2>
-<p> The feedback is mostly visual as a message pops up when they click on it. When they click outside of it the message goes away.
-    <br> Other feedback is when you hover over on the dot it changes from a grab to a pointer </br>
-</p>
-<h2>5. Loops and Modes</h2>
+<h3>Vehicle marker- Default/ Not selected</h3>
 <ul>
+  <li> Hover ON
+    <ul>
+      <li> Cursor changes to Pointer, indicating the marker is clickable</li>
+    </ul>
+  </li>
+  <li> Hover OFF
+    <ul>
+      <li> Cursor returns to the map cursor</li>
+    </ul>
+  </li>
+  <li> Click ON
+    <ul>
+      <li> Information popup appears</li>
+      <li> Vehicle number and trip information are displayed</li>
+      <li> Next stop/direction information is displayed</li>
+      <li> On-time or delay information is displayed</li>
+      <li> Map zooms toward the selected vehicle</li>
+    </ul>
+  </li>
+  <li> Vehicle Marker — Selected
+    <ul>
+      <li> Click OFF
+        <ul>
+          <li> Popup disappears</li>
+          <li> Map does not automatically zoom back out</li>
+        </ul>
+      </li>
+      <li> Click Different Vehicle Marker
+        <ul>
+          <li> Popup changes to the newly selected vehicle's information</li>
+          <li> Map changes focus to the newly selected vehicle</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li> Real-Time Feedback
+    <ul>
+      <li> Vehicle markers change position as SEPTA receives updated location data</li>
+      <li> The user does not need to refresh the page to see updated vehicle positions</li>
+    </ul>
+  </li>
+
+<h2>5. Loops and Modes</h2>
     <h3>Loops: </h3>
-    <p> Checking train location:
-- User clicks a train on the map.
-- The map displays information about the selected train.
-- User reviews the train's location and trip information.
-- User clicks another train to compare.
-- The process repeats until they find the train they need.
-    </p>
-    <li> Real-time changes: Location changes happen as septa vehicles move, therefore shows a changing state.
-    </li>
+    <h3>Vehicle Marker - Loops</h3>
+<p>- N/A — Selecting a vehicle does not initiate a user-controlled repeating interaction. The vehicle's location updates automatically in real time.</p>
+ <ul>
     <li> Map Modes
         - Default state: Empty map with no line selected
         - Train selection mode: Search bar drops down different lines
         - Selected mode: Once a line is selected its route is highlighted and the stops or vehicles are displayed.
     </li>
-    <li> Multiple Objects: Contains multiple different markers that can be selected.</li>
-    <li> Filtering: Users can filter out a certain route or service that will show only the relevant markers.</li>
-    <li> De-select: Selecting another option when you are still clicking on one will switch description information.</li>
-    <li>Zooming: The interface responds with zooming into that specific vehicle as well.</li>
+    </ul>
 
-</ul>
+<h3>Not Selected Mode</h3>
+<p>Vehicle marker is visible on the map
+- No vehicle-specific popup is displayed</p>
+
+<h3>Selected Mode</h3>
+<p>- Vehicle-specific popup is displayed
+- Map is focused/zoomed toward that vehicle
+- Selected vehicle information remains visible until the user clicks off or selects another vehicle</p>
+
+<h3>Switching Selected Vehicle</h3>
+<p>- Clicking another vehicle changes which marker is in Selected Mode
+- Previous vehicle returns to Not Selected Mode
+- Only one vehicle can have its information displayed at a time</p>
+
+  
+
 
 <h1> Images </h1>
 <p>Image 1 shows the map before it displays any vehicles. </p>

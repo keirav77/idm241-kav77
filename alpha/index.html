@@ -24,21 +24,31 @@ Then clicking on the real time map button, click the certain line or mode of tra
 <h2>2. Triggers</h2>
 <ul>
     <li> User looks at the vehicle marker</li>
-    <li> Moves cursor onto the marker</li>
-    <li> User Clicks on the marker</li>
-    <li> Marker responds with a message popup that shows train number, information about next stop and inbound or outbound, and message about if it's delayed or on time.</li>
-<li> The interface responds with zooming into that specific vehicle as well.</li>
+    <li> 1. Hover on 
+        2. Hover off
+        3. Click on
+        4.Click off </li>
 </ul>
 <h2>3. Rules</h2>
 <ul>
+    <li> Hover on dot: changes from a grab hand to a pointer</li>
+    <li> Hover off changes from pointer to grabbing-hand</li>
+    <li> Click on- Marker responds with a message popup that shows train number, information about next stop and inbound or outbound, and message about if it's delayed or on time.</li>
+<li> Click on- The interface responds with zooming into that specific vehicle as well.</li>
+<li> Click off- The pop up message disappears. Does not zoom back out.</li>
+
+
     <li> 1. Selecting a vehicle marker will display information.</li>
     <li> 2. The map identifies the selected vehicle and displays its current location, next stops, and any delays.</li>
 <li> 3. Only the selected marker will show the information display.</li>
+<li> Clicking on another marker will zoom out and zoom into the new marker. It also switches information on the pop up to the new information</li>
 </ul>
 <p>The map will update the other vehicles in real time but the information about them are only listed if you click on it. Selecting different ones will also show it.</p>
 
 <h2>4. Feedback</h2>
-<p> The feedback is mostly visual as a message pops up when they click on it. When they click outside of it the message goes away.</p>
+<p> The feedback is mostly visual as a message pops up when they click on it. When they click outside of it the message goes away.
+    <br> Other feedback is when you hover over on the dot it changes from a grab to a pointer </br>
+</p>
 <h2>5. Loops and Modes</h2>
 <ul>
     <li> Real-time changes: Location changes happen as septa vehicles move, therefore shows a changing state.

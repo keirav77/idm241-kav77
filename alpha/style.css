@@ -1,15 +1,15 @@
 :root {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #9aa0a6;
+    color: #000000;
     margin: 0;
     display: flex;
     justify-content: center;
     font-family: 'Roboto'
 }
 body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  background-color: #d5dade;
+  color: #000000;
+  font-family: var('Roboto', 'Product Sans');
   line-height: 1.6;
   max-width: 900px;
   margin: 0 auto;
@@ -17,20 +17,20 @@ body {
 }
 
 a{
-    color: #e8792a;
+    color: #ea4335;
     text-decoration: none;
     text-decoration: underline;
     font-weight: 400;
 }
 h1 {
     font-size: 32px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family:'Roboto';
     font-weight: 800;
     letter-spacing:-0.5px;
 
 }
 ul {
-    color: #ffffff;
+    color: #000000;
     font-weight: 300;
     margin: auto;
       padding: 20px 20px;
@@ -40,7 +40,7 @@ ul {
 }
 
 li {
-     color: #ffffff;
+     color: #000000;
     font-weight: 300;
     margin: auto;
     line-height: 1.6em;
@@ -48,12 +48,12 @@ li {
     margin: 0, auto;
 }
 h2 {
-    color: #00A3E0;
+    color: #1a1d1e;
     font-weight: 600;
 }
 
 p {
-    color: #ffffff;
+    color: #000000;
     font-weight: 300;
     margin: auto;
       padding: 20px 20px;
@@ -68,4 +68,15 @@ img {
   border-radius: 4px;
   margin: 15px 0 30px 0;
   background-color: #111111; /* Fallback frame block */
+}
+.google {
+
+  margin: 0, 10, 30;
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+.video{
+width: auto;
+height: 50%;
 }

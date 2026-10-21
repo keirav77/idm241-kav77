@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/assets/styles/style.css">
+    <link rel="normalize" href="../build/assets/styles/normalize.css">
+    <script src="../build/scripts/scripts.js"></script>
+</head>
+<body>
+    <h1>Collapisble button</h1>
+   <!-- <button type="button" class="collapsible">My Drive</button>
+    <div class="title">
+    <p> Open/Close</p>
+    </div> -->
+     <details class="dropdown">
+    <summary class="dropdown-toggle">My Drive</summary>
+    <div class="dropdown-menu">
+      <button type="button" class="dropdown-item">Folder 1</button>
+      <button type="button" class="dropdown-item">Folder 2</button>
+    </div>
+  </details>
+  <!--Ai use: Line 14: I asked claude what's a better way to make a dropdown other than javascript and it mentioned
+  details because the browser handles the opening and closing -->
+  
+  <!--Ai Use: Lines: 16-18: I asked ai "How can I make a dropdown list that isn't going to connect me to another page? I don't want to use href=.... because I want it to open on a same page not not
+  link to a new one"
+  Answer: Instead of making it an an <a href=-- just use your typical buttons type, because
+  buttons don't jump to a different page.-->
+  <h2> Triggers</h2>
+<!--
+    <li>Click or tap the "My drive" button to open the menu, clicking it a second time closes it</li>
+    <li>Keyboard: Pressing the enter or space bar when your cursor is hovered over the button will do the same thing</li>
+     <li>Hover: Moving the mouse over the "My drive" or "Folder options" starts the hover effect</li>   
+     <li>Press: clicking down on the button highlights the button blue and the button enters a pressed state.</li>>
+</ul> 
+--> <ul> <li>Click ON</li>
+    <li>Click OFF</li>
+     <li>Hover ON</li>   
+     <li>HOVER OFF</li>
+</ul>
+
+  <h2> Rules</h2>
+  <ul>
+            <li>Hover ON:
+                <ul>
+                    <li> Cursor turns into a pointer</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Hover OFF:
+                <ul>
+                    <li> Pointer goes back to a cursor</li>
+                </ul>
+            </li>
+        </ul>
+<ul>
+    <li>Click ON:
+        <ul>
+            <li>Button turns blue</li>
+            <li>Dropdown expands down to options to folder 1 and folder two</li>
+            <li>Arrow rotates down</li>
+        </ul></ul>
+<ul>
+            <li>Click OFF:
+                <ul>
+                    <li> Button returns to original color</li>
+                    <li>Dropdown collapses up</li>
+                    <li>Arrow rotates up </li>
+                </ul>
+            </li>
+        </ul>
+
+        
+
+  <h2>Feedback</h2>
+ <ul>
+  <li>Hover ON:
+                <ul>
+                    <li> Cursor turns into a pointer</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Hover OFF:
+                <ul>
+                    <li> Pointer goes back to a cursor</li>
+                </ul>
+            </li>
+        </ul>
+<ul>
+    <li>Click ON:
+        <ul>
+            <li>Button turns blue</li>
+            <li>Dropdown expands down to options to folder 1 and folder two</li>
+            <li>Arrow rotates down</li>
+        </ul></ul>
+<ul>
+            <li>Click OFF:
+                <ul>
+                    <li> Button returns to original color</li>
+                    <li>Dropdown collapses up</li>
+                    <li>Arrow rotates up </li>
+                </ul>
+            </li>
+        </ul>
+
+        
+<h2>Loops & Modes</h2>
+<ul>
+    <li>None</li>
+</ul>
+</body>
+</html>

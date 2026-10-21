@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+
+:root {
+ --text: #3c4043;   
+--button-color: rgb(238, 235, 235);
+--button-hover: #dcdcdc;
+--selected: #c2e7ff;
+--selected-text: #001d35;
+--hover: #e3e3e3;
+--divider: #dadce0;
+/*Asked Ai to define the button shadows from a screen shot on google drive buttons, these are the two shadows they gave me.*/
+--shadow-1: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+--shadow-2:0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+--font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 1.5rem 2rem;
+    text-align: left;
+    color: var(--text);
+    font-family:var(--font-family);
+
+}
+
+/* Positioning for dropdown menu */
+.dropdown{
+    position: relative;
+    display: block;
+    width: 12.75rem;
+    margin:0 auto;
+}
+
+/*The actual button */
+.dropdown-toggle{
+    cursor: pointer;
+     height: 56px;
+     width: 12.75rem;
+     padding: 0.5rem;
+     font-size: 1rem;
+     font-weight: bold;
+     font-family:var(--font-family);
+     background-color: var(--button-color);
+     box-shadow:0 2px 6px rgba(0, 0, 0, 0.3);
+     border-radius: 16px;
+     transition: background-color 0.15s ease, box-shadow 0.2s ease;
+     list-style: none;
+
+     gap: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+.dropdown-toggle::before {
+    content: "\25B6";
+
+    transition: transform 0.2s ease; 
+}
+/*Looked up how to make something interactive without Javascript that shows the button expanding/active */
+.dropdown[open] .dropdown-toggle::before {
+    /*open arrow psuedo */
+    transform: rotate(90deg);
+   
+}
+
+
+
+.dropdown[open] .dropdown-toggle {
+    background-color:var(--selected);
+    color:var(--selected-text);
+    box-shadow: var(--shadow-2);
+    
+
+}
+
+
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 14px;
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text);
+    text-align:left;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    transition: background-color 0.15s ease;
+    
+
+}
+.dropdown-item:hover {
+    background-color: var(--button-hover);
+    color:var(--text);
+}
+.dropdown-item.selected{
+    background-color: var(--selected);
+    color: var(--selected-text);
+    font-weight:bold ;
+}
+
+/* Drop down Menu*/
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    background-color:#ffffff;
+    box-shadow: var(--shadow-2);
+    width: 12.75rem;
+    border-radius: 16px;
+    padding: 8px;
+    margin-top: 4px;
+     color:var(--button-hover);
+
+}
+.dropdown[open] .dropdown-menu {
+  animation: menu-in 0.18s ease-out;
+}
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

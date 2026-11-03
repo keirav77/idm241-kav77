@@ -41,6 +41,26 @@ p {
       line-height: 1.6;
     margin: 0, auto;
 }
+ul {
+    color: #000000;
+    font-weight: 300;
+    margin: auto;
+      padding: 20px 20px;
+      font-weight: 600;
+      line-height: 1.6;
+    margin: 0, auto;
+
+}
+
+li {
+     color: #000000;
+    font-weight: 400;
+    margin: auto;
+    padding: auto
+    line-height: 1.6em;
+    padding: 20px, 20px;
+    margin: 0, auto;
+}
 /*dropdown*/
 
 .dropdown{
